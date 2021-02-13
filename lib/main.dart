@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'challenge1.dart';
 import 'challenge2.dart';
 import 'challenge3.dart';
+import 'challenge4.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +13,7 @@ const screens = {
   "Challenge 1": "/challenge1",
   "Challenge 2": "/challenge2",
   "Challenge 3": "/challenge3",
+  "Challenge 4": "/challenge4",
 };
 
 class MyApp extends StatelessWidget {
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/challenge1': (context) => Challenge1(),
         '/challenge2': (context) => Challenge2(),
         '/challenge3': (context) => Challenge3(),
+        '/challenge4': (context) => Challenge4(),
       },
     );
   }
