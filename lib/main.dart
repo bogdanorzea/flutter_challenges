@@ -2,10 +2,17 @@ import 'package:flutter/material.dart';
 
 import 'challenge1.dart';
 import 'challenge2.dart';
+import 'challenge3.dart';
 
 void main() {
   runApp(MyApp());
 }
+
+const screens = {
+  "Challenge 1": "/challenge1",
+  "Challenge 2": "/challenge2",
+  "Challenge 3": "/challenge3",
+};
 
 class MyApp extends StatelessWidget {
   @override
@@ -19,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/challenge1': (context) => Challenge1(),
         '/challenge2': (context) => Challenge2(),
+        '/challenge3': (context) => Challenge3(),
       },
     );
   }
@@ -36,20 +44,14 @@ class Home extends StatelessWidget {
           ...ListTile.divideTiles(
             context: context,
             tiles: [
-              ListTile(
-                title: Text('Challenge 1'),
-                trailing: Icon(Icons.chevron_right),
-                onTap: () {
-                  Navigator.of(context).pushNamed('/challenge1');
-                },
-              ),
-              ListTile(
-                title: Text('Challenge 2'),
-                trailing: Icon(Icons.chevron_right),
-                onTap: () {
-                  Navigator.of(context).pushNamed('/challenge2');
-                },
-              ),
+              for (final screen in screens.entries)
+                ListTile(
+                  title: Text(screen.key),
+                  trailing: Icon(Icons.chevron_right),
+                  onTap: () {
+                    Navigator.of(context).pushNamed(screen.value);
+                  },
+                ),
             ],
           ),
         ],
