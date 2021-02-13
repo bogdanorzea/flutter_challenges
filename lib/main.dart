@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_challenges/challenge1.dart';
+
+import 'challenge1.dart';
+import 'challenge2.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
       home: Home(),
       routes: {
         '/challenge1': (context) => Challenge1(),
+        '/challenge2': (context) => Challenge2(),
       },
     );
   }
@@ -38,6 +41,13 @@ class Home extends StatelessWidget {
                 trailing: Icon(Icons.chevron_right),
                 onTap: () {
                   Navigator.of(context).pushNamed('/challenge1');
+                },
+              ),
+              ListTile(
+                title: Text('Challenge 2'),
+                trailing: Icon(Icons.chevron_right),
+                onTap: () {
+                  Navigator.of(context).pushNamed('/challenge2');
                 },
               ),
             ],
