@@ -18,9 +18,13 @@ class Challenge3 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Challenge 3")),
       body: Container(
+        margin: EdgeInsets.all(40),
         height: containerHeight,
         width: containerWidth,
-        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.all(Radius.circular(containerHeight / 2))),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.all(Radius.circular(containerHeight / 2)),
+        ),
         clipBehavior: Clip.antiAlias,
         alignment: Alignment.centerLeft,
         child: Container(
