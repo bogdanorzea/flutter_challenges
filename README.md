@@ -1,16 +1,13 @@
 # flutter_challenges
 
-A new Flutter project.
+A Flutter project that tries to solve the challenges from [Medium article](https://medium.com/flutter-community/flutter-container-with-challenges-b7b5c05f0b73).
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![Challenge 1](./images/challenge1.png)
 
-A few resources to get you started if this is your first Flutter project:
+![Challenge 2](./images/challenge2.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Challenge 3](./images/challenge3.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Challenge 4](./images/challenge4.png)
