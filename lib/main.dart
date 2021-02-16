@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'challenge1.dart';
-import 'challenge2.dart';
-import 'challenge3.dart';
-import 'challenge4.dart';
-import 'challenge5.dart';
-import 'challenge6.dart';
+import 'screens.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +13,11 @@ const screens = {
   "Challenge 4": "/challenge4",
   "Challenge 5": "/challenge5",
   "Challenge 6": "/challenge6",
+  "Path example": "/path",
+  "Implicit animations": "/animation1",
+  "Custom implicit animations": "/animation2",
+  "Build-in explicit animations": "/animation3",
+  "Custom explicit animations": "/animation4",
 };
 
 class MyApp extends StatelessWidget {
@@ -30,12 +30,17 @@ class MyApp extends StatelessWidget {
       ),
       home: Home(),
       routes: {
-        '/challenge1': (context) => Challenge1(),
-        '/challenge2': (context) => Challenge2(),
-        '/challenge3': (context) => Challenge3(),
-        '/challenge4': (context) => Challenge4(),
-        '/challenge5': (context) => Challenge5(),
-        '/challenge6': (context) => Challenge6(),
+        '/challenge1': (_) => Challenge1(),
+        '/challenge2': (_) => Challenge2(),
+        '/challenge3': (_) => Challenge3(),
+        '/challenge4': (_) => Challenge4(),
+        '/challenge5': (_) => Challenge5(),
+        '/challenge6': (_) => Challenge6(),
+        '/path': (_) => PathExample(),
+        '/animation1': (_) => Animation1(),
+        '/animation2': (_) => Animation2(),
+        '/animation3': (_) => Animation3(),
+        '/animation4': (_) => Animation4(),
       },
     );
   }
